@@ -1,0 +1,138 @@
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:id="@+id/placeCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardPreventCornerOverlap="true">
+    >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+           >
+            <View
+                android:layout_height="match_parent"
+                android:background="#1839a7"
+                android:layout_weight="0.03" android:layout_width="0dp"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.77"
+                android:orientation="vertical"
+
+            >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" android:padding="3dp">
+                    <TextView
+                        android:id="@+id/libelle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_margin="2dp"
+
+                        android:gravity="center_vertical" android:text="libelle"
+                        android:textColor="?android:attr/textColorPrimary"
+                        android:textStyle="normal|bold"/>
+                    <TextView
+                        android:id="@+id/Adresse"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:text="Adresse"/>
+                    <TextView
+                        android:id="@+id/description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:text="Description"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#1839a7"
+                    android:orientation="horizontal" android:weightSum="1">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5" android:orientation="vertical"
+                    >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center" android:text="Volunteerings"
+                            android:textColor="@android:color/white" android:textSize="14sp"
+                            android:textStyle="normal|bold"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" android:paddingBottom="1dp">
+                            <TextView
+                                android:id="@+id/nbreVol"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center" android:text="300"
+                                android:textColor="@android:color/white" android:textSize="18sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5" android:orientation="vertical"
+                        android:weightSum="1">
+                        <TextView
+                            android:id="@+id/dateStart"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp" android:layout_weight="0.5"
+                            android:gravity="center" android:text="Distance"
+                            android:textColor="@android:color/white"
+                            android:textStyle="normal|bold"/>
+                        <TextView
+                            android:id="@+id/dateEnd"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginBottom="1dp" android:layout_weight="0.5"
+                            android:gravity="center" android:text="distance"
+                            android:textColor="@android:color/white" android:textSize="18sp"/>
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.5"
+                            android:gravity="end"
+                            android:text="300" android:textColor="@android:color/white"
+                            android:textSize="18sp"/>
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.5"
+                            android:gravity="end"
+                            android:text="300" android:textColor="@android:color/white"
+                            android:textSize="18sp"/>
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.5"
+                            android:gravity="end"
+                            android:text="300" android:textColor="@android:color/white"
+                            android:textSize="18sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/participate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.20"
+                android:background="@drawable/volunteer_icon"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
